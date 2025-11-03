@@ -1,4 +1,8 @@
 package com.pacuarto.repository;
 
-public class DonanteRepository {
+import com.pacuarto.domain.model.Donante;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DonanteRepository extends JpaRepository<Donante, Long> {
+
 }
