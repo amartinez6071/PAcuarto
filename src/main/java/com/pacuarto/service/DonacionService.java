@@ -29,7 +29,7 @@ public class DonacionService {
     }
 
     @Transactional(readOnly = true)
-    public Donacion obtener(Long id) throws Throwable {
+    public Donacion obtener(Long id) {
         return donacionRepo.findById(id).orElseThrow(() -> new NotFoundException("Donación no encontrada: " + id));
     }
 
