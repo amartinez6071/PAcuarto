@@ -1,0 +1,62 @@
+<div class="register-container">
+  <h2>Crear cuenta</h2>
+
+  <form (ngSubmit)="onRegister()">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" [(ngModel)]="nombre" name="nombre" required />
+    </div>
+
+    <div class="form-group">
+      <label>Dirección</label>
+      <input type="text" [(ngModel)]="direccion" name="direccion" />
+    </div>
+
+    <div class="form-group">
+      <label>Usuario</label>
+      <input type="text" [(ngModel)]="username" name="username" required />
+    </div>
+
+    <div class="form-group">
+      <label>Contraseña</label>
+      <input type="password" [(ngModel)]="password" name="password" required />
+    </div>
+
+    <div class="form-group">
+      <label>Tipo de usuario</label>
+      <div class="radio-group">
+        <label>
+          <input type="radio" [(ngModel)]="tipo" name="tipo" value="DONANTE" />
+          Donante
+        </label>
+        <label>
+          <input type="radio" [(ngModel)]="tipo" name="tipo" value="RECEPTOR" />
+          Receptor
+        </label>
+      </div>
+    </div>
+
+    <button type="submit">Registrarme</button>
+
+    <p class="back-text">
+      ¿Ya tienes cuenta? <a routerLink="/login" class="back-link">Inicia sesión</a>
+    </p>
+  </form>
+</div>
+
+<div *ngIf="mensajeError" class="modal-backdrop">
+  <div class="modal modal-error">
+    <h3>Error</h3>
+    <p>{{ mensajeError }}</p>
+    <button type="button" (click)="mensajeError = ''">Cerrar</button>
+  </div>
+</div>
+
+<div *ngIf="mensajeOk" class="modal-backdrop">
+  <div class="modal modal-ok">
+    <h3>Registro exitoso</h3>
+    <p>{{ mensajeOk }}</p>
+    <button type="button" (click)="mensajeOk = ''">Cerrar</button>
+  </div>
+</div>
+

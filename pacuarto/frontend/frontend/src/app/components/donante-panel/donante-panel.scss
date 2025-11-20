@@ -1,0 +1,41 @@
+.panel-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, sans-serif;
+  text-align: center;
+}
+
+.panel-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.panel-actions button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #1976d2;
+  color: #fff;
+  font-weight: 600;
+}
+
+.panel-actions button:hover {
+  background: #145ca3;
+}
+
+.back-text {
+  margin-top: 20px;
+}
+
+.back-text a {
+  color: #e53935;
+  text-decoration: none;
+  font-weight: 600;
+}

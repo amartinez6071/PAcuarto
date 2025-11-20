@@ -1,0 +1,139 @@
+.register-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.radio-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #1976d2;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #145ca3;
+}
+
+.back-text {
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.back-link {
+  color: #1976d2;          
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: #145ca3;           
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 8px;
+  min-width: 260px;
+  max-width: 360px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.modal h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.modal p {
+  margin-bottom: 16px;
+}
+
+.modal-error {
+  border-top: 4px solid #e53935;
+}
+
+.modal-ok {
+  border-top: 4px solid #43a047;
+}
+
+.modal button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-error button {
+  background: #e53935;
+  color: #fff;
+}
+
+.modal-error button:hover {
+  background: #c62828;
+}
+
+.modal-ok button {
+  background: #43a047;
+  color: #fff;
+}
+
+.modal-ok button:hover {
+  background: #2e7d32;
+}

@@ -1,0 +1,94 @@
+<div class="receptor-panel">
+  <!-- Barra superior con título y botón de cerrar sesión -->
+  <header class="top-bar">
+    <h2>Panel del Receptor</h2>
+    <a routerLink="/login" class="logout-btn">Cerrar sesión</a>
+  </header>
+
+  <p class="welcome-text">
+    Bienvenido, aquí puedes ver las donaciones disponibles y el estado de tus
+    solicitudes.
+  </p>
+
+  <div class="grid-panels">
+    <!-- Donaciones disponibles -->
+    <section class="card">
+      <h3>Donaciones disponibles</h3>
+      <p class="card-subtitle">
+        Consulta los menús donados que están disponibles para solicitar.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Menú</th>
+              <th>Donante</th>
+              <th>Fecha</th>
+              <th>Cantidad</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Ejemplo de filas estáticas. Luego aquí iría tu *ngFor -->
+            <tr>
+              <td>Almuerzo completo</td>
+              <td>Restaurante Buen Sabor</td>
+              <td>2025-11-10</td>
+              <td>10 raciones</td>
+              <td>
+                <button class="action-btn">Solicitar</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Cena ligera</td>
+              <td>Comedor Comunitario</td>
+              <td>2025-11-12</td>
+              <td>6 raciones</td>
+              <td>
+                <button class="action-btn">Solicitar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Mis solicitudes -->
+    <section class="card">
+      <h3>Mis solicitudes</h3>
+      <p class="card-subtitle">
+        Revisa las solicitudes que has realizado y su estado actual.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Menú</th>
+              <th>Fecha solicitud</th>
+              <th>Donación</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Ejemplo de filas estáticas. Luego aquí iría tu *ngFor -->
+            <tr>
+              <td>Almuerzo completo</td>
+              <td>2025-11-08</td>
+              <td>Donación #1</td>
+              <td><span class="status status-pendiente">Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>Cena ligera</td>
+              <td>2025-11-07</td>
+              <td>Donación #3</td>
+              <td><span class="status status-entregado">Entregado</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+
